@@ -7,9 +7,7 @@ export default function App() {
     return(
         <>
             <Corpo/>
-            <SideBar/>
             <NavBar/>
-            <Usuario/>
         </>
     )
 }

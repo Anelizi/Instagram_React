@@ -12,7 +12,7 @@ export default function Corpo() {
           <Stories />
           <Posts />
         </div>
-        <SideBar />
+          <SideBar/>
       </div>
     </>
   );

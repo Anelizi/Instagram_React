@@ -1,9 +1,10 @@
 import Sugestoes from "./Sugestoes";
 import Usuario from "./Usuario";
 
-export default function SideBar(){
-    return(
-        <div class="sidebar">
+export default function SideBar() {
+  return (
+    <>
+      <div class="sidebar">
         <Usuario/>
         <Sugestoes/>
         <div class="links">
@@ -13,5 +14,6 @@ export default function SideBar(){
 
         <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
       </div>
-    )
+    </>
+  );
 }
