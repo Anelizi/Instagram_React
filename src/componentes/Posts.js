@@ -21,7 +21,7 @@ export default function Posts() {
   ];
 
   return (
-    <div class="posts">
+    <div className="posts">
       {post.map((p) => (
         <Post
           imgUsuario={p.imgUsuario}
