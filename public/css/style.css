@@ -187,6 +187,14 @@ body {
   font-size: 24px;
 }
 
+#corRed{
+  color: red;
+}
+
+#corAzul{
+  color: #001a7a;
+}
+
 .post .fundo .acoes div:first-child ion-icon {
   margin-right: 6px;
 }
@@ -304,4 +312,3 @@ ion-icon {
   padding-top: 5px;
   color: black;
 }
-

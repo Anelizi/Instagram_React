@@ -6,11 +6,17 @@ export default function Usuario() {
 
   function trocarNome(){
     const nomeDoUsuario = prompt("Qual é seu nome?");
+    if(nomeDoUsuario === ""){
+      return nome;
+    }
     setNome(nomeDoUsuario);
   }
 
   function trocarFoto(){
-    const fotoDoUsuario = prompt("Link da foto")
+    const fotoDoUsuario = prompt("Link da foto");
+    if(fotoDoUsuario === ""){
+      return foto;
+    }
     setFoto(fotoDoUsuario);
   }
 
