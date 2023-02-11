@@ -8,7 +8,7 @@ export default function Posts() {
       nomeUsuario: "meowed",
       imgUsuarioCurtiu: "assets/img/respondeai.svg",
       nomeUsuarioCurtiu: "respondeai",
-      curtidas: 101.523,
+      curtidas: 101523,
     },
     {
       imgUsuario: "assets/img/barked.svg",
@@ -16,7 +16,7 @@ export default function Posts() {
       nomeUsuario: "barked",
       imgUsuarioCurtiu: "assets/img/adorable_animals.svg",
       nomeUsuarioCurtiu: "adorable_animals",
-      curtidas: 99.159,
+      curtidas: 99159,
     },
   ];
 
