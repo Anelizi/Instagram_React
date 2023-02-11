@@ -23,7 +23,7 @@ export default function Post(props) {
 
   return (
     <>
-      <div className="post">
+      <div data-test="post" className="post">
         <div className="topo">
           <div className="usuario">
             <img src={props.imgUsuario} alt={props.nomeUsuario} />
@@ -35,18 +35,18 @@ export default function Post(props) {
         </div>
 
         <div className="conteudo">
-          <img src={props.conteudo} onDoubleClick={doubleClick} alt="gato-telefone" />
+          <img data-test="post-image" src={props.conteudo} onDoubleClick={doubleClick} alt="gato-telefone" />
         </div>
 
         <div className="fundo">
           <div className="acoes">
             <div>
-              <ion-icon name={likes ? "heart" : "heart-outline"} id={likes ? "corRed" : ""} onClick={curtir}></ion-icon>
+              <ion-icon data-test="like-post" name={likes ? "heart" : "heart-outline"} id={likes ? "corRed" : ""} onClick={curtir}></ion-icon>
               <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
             <div>
-              <ion-icon name={salva ? "bookmark" : "bookmark-outline" } id={salva ? "corAzul" : ""} onClick={() => setSalva(!salva)}></ion-icon>
+              <ion-icon data-test="save-post" name={salva ? "bookmark" : "bookmark-outline" } id={salva ? "corAzul" : ""} onClick={() => setSalva(!salva)}></ion-icon>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export default function Post(props) {
             <img src={props.imgUsuarioCurtiu} alt={props.nomeUsuarioCurtiu} />
             <div className="texto">
               Curtido por <strong>{props.nomeUsuarioCurtiu}</strong> e{" "}
-              <strong>outras {curtida} pessoas</strong>
+              <strong data-test="likes-number">outras {curtida} pessoas</strong>
             </div>
           </div>
         </div>
