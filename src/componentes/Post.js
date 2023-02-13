@@ -38,7 +38,7 @@ export default function Post(props) {
         </div>
 
         <div className="conteudo">
-          <ion-icon name="heart" class={animacao ? "coracao scale-up-center" : "desaparece"}></ion-icon>
+          <ion-icon name="heart" class={`coracao ${animacao ? " scale-up-center" : "desaparece"}`}></ion-icon>
           <img data-test="post-image" src={props.conteudo} onDoubleClick={doubleClick} alt="gato-telefone" />
         </div>
 
