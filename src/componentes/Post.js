@@ -16,8 +16,9 @@ export default function Post(props) {
   }
 
   function doubleClick() {
-    setAnimacao(true)
+    
     if (likes === false){
+      setAnimacao(true)
       setCurtida(curtida + 1);
     }
     setLikes(true);
