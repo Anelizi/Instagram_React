@@ -195,6 +195,52 @@ body {
   color: #001a7a;
 }
 
+.conteudo{
+  position: relative;
+}
+
+.coracao{
+  font-size: 150px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  position: absolute;
+}
+
+.desaparece{
+  opacity: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.scale-up-center {
+	animation: scale-up-center 0.3s;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+            transform: scale(0.2);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+            transform: scale(0.2);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
 .post .fundo .acoes div:first-child ion-icon {
   margin-right: 6px;
 }
