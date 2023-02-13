@@ -4,7 +4,6 @@ export default function Post(props) {
   const [salva,setSalva] = useState(false);
   const [curtida, setCurtida] = useState(parseFloat(props.curtidas));
   const [likes, setLikes] = useState(false);
-  const [animacao, setAnimacao] = useState(false);
 
   function curtir() {
     if (likes === false){
@@ -18,11 +17,9 @@ export default function Post(props) {
   function doubleClick() {
     
     if (likes === false){
-      setAnimacao(true)
       setCurtida(curtida + 1);
     }
     setLikes(true);
-    setTimeout(() => {setAnimacao(false)}, 500)
   }
 
   return (
@@ -38,9 +35,8 @@ export default function Post(props) {
           </div>
         </div>
 
-        <div data-test="post-image" className="conteudo">
-          <ion-icon name="heart" class={`coracao ${animacao ? " scale-up-center" : "desaparece"}`}></ion-icon>
-          <img  src={props.conteudo} onDoubleClick={doubleClick} alt="gato-telefone" />
+        <div  className="conteudo">
+          <img data-test="post-image" src={props.conteudo} onDoubleClick={doubleClick} alt="gato-telefone" />
         </div>
 
         <div className="fundo">
